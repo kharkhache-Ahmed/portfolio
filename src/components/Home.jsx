@@ -1,15 +1,16 @@
 import React from 'react';
 import AhmedKharkhache from "../images/AhmedKharkhache.jpg";
 import { TypeAnimation } from 'react-type-animation';
+import Vscode from './Vscode';
 const Home = () => {
     return (
-        <div className="h-screen grid grid-cols-3 w-screen p-10 container mx-auto gap-1">
+        <div className="min-h-screen grid grid-cols-3 w-screen p-10 container mx-auto pt-30">
 
             <div className="col-span-2 flex items-center justify-center">
                 <h1 className='
                     welcomeText
                     text-white
-                    text-5xl'>&lt;Hello, I'm <span className='text-6xl font-bold text-blue-700'>Ahmed Kharkhache</span>
+                    text-4xl'>&lt;Hello, I'm <span className='text-5xl font-bold text-blue-700'>Ahmed Kharkhache</span>
                     <br /> 
                     <TypeAnimation
                         sequence={[
@@ -32,7 +33,7 @@ const Home = () => {
 
             <div className="col-span-1 flex justify-center items-center">
                 <div className="w-48
-                    h-48 
+                    h-48
                     overflow-hidden 
                     rounded-full 
                     hover:shadow-2xl
@@ -56,12 +57,26 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='h-full bg-blue-900 col-span-2'>
-
+            <div className='
+                h-full
+                col-span-2
+                flex
+                flex-col
+                '>
+                <Vscode/>
             </div>
 
-            <div className='h-full bg-purple-900 col-span-1'>
-
+            <div className='
+            h-full
+            text-md
+            flex
+            justify-center
+            items-center
+            gap-5
+            text-slate-200
+            col-span-1'>
+                <button className='btn'>Contact me</button>
+                <button className='btn'>Check my CV</button>
             </div>
         </div>
 
