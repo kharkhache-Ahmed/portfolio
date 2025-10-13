@@ -1,12 +1,17 @@
-import React from "react";
-import Nav from "./components/Nav";
-import Home from "./components/Home";
+import React, { useState } from "react";
+import Nav from "./components/sections/Nav";
+import Home from "./components/sections/Home";
+import Test from "./myTests/Test";
 
 const App = () => {
+
+  const [notDark,setNotDark] = useState(true);
+
   return (
     <>
-      <Nav/>
-      <Home/>
+      <Nav notDark={notDark} setNotDark={setNotDark} />
+      <Home notDark={notDark} setNotDark={setNotDark}/> 
+      {/* <Test/> */}
     </>
   );
 };
